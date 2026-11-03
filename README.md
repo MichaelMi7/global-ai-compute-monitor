@@ -48,3 +48,16 @@ Never put secrets or employer material in this repository. Local `.env`, credent
 Streamlit secrets, databases and the virtual environment are ignored. Report factual
 corrections through GitHub issues. Code is MIT licensed; underlying third-party source
 material remains subject to its own rights and is linked rather than redistributed.
+
+## Portable phone preview
+
+`exports/global-ai-compute-monitor.html` is a single mobile-friendly offline snapshot.
+Transfer the actual file to a phone and open it in a browser that permits local HTML.
+Some phone attachment previews restrict HTML; use a browser or HTML viewer if needed.
+It contains its own styles and charts, with no JavaScript, remote libraries or server.
+Source links require internet; the charts and evidence do not. This snapshot does not
+update automatically. Rebuild it with:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/export_html.py
+```
