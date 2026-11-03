@@ -1,6 +1,6 @@
 # Release 0.2 validation — 2026-11-04 (Australia/Sydney)
 
-- Windows / Python 3.14.3: **43 tests passed**, no failures (8.43 seconds).
+- Windows / Python 3.14.3: **43 tests passed**, no failures (8.78 seconds).
 - Streamlit AppTest: initial render, empty selection, positive capacity and complete
   matched-scope scenario interaction passed; four dashboard tabs present.
 - Browser inspection: running dashboard shows release 0.2, six reporting entities,
@@ -38,3 +38,15 @@ been performed. Unavailable worldwide telemetry remains an explicit research gap
 
 Historical Phase 1 validation is preserved in Git (20 passing tests and successful
 Linux run 41550663936); it is superseded by this release record.
+
+
+## Remote release verification
+
+Linux / Python 3.14 CI passed at exact implementation commit
+3b2c8980a0b69e71f092c41107b3659087537e67:
+https://github.com/MichaelMi7/global-ai-compute-monitor/actions/runs/41721718628
+
+The run passed all 43 tests, offline database rebuild, export regeneration, byte-for-byte
+CSV/manifest comparison, Linux Docker image build and in-container evidence-load check.
+The tested implementation commit is the v0.2.0 release target. Subsequent completion
+notes do not change the tested implementation. Cloud hosting itself is not activated.

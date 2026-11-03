@@ -39,3 +39,11 @@ Completion means a usable end-to-end open research release with explicit known g
 not a claim that unavailable worldwide private telemetry has become observable.
 No paid services or credentials are necessary. Autonomous local and GitHub work is
 requested by the user; actual sandbox requirements still apply.
+
+
+Phase 2 completion (2026-11-04): delivered research release 0.2 with expanded primary
+evidence, separately labeled infrastructure estimates, accounting guards, scenario
+analysis, four dashboard views, offline HTML/data exports and source monitoring.
+43 tests passed on Windows and Linux; Linux container and release-byte checks passed.
+The evidence gaps in docs/phase2-assessment.md remain research limitations. No invented
+global measurement or investment conclusion is claimed as project completion.
