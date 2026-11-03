@@ -1,3 +1,7 @@
+# Methodology: current release 0.2
+
+The Phase 2 addendum below supersedes Phase 1 coverage and implementation limits.
+
 # Research methodology v0.1
 
 ## Scope and definitions
@@ -102,3 +106,38 @@ input/output, caching, multimodal accounting, paid/free split, latency targets a
 training allocation preclude compute equivalence and supply-demand comparison. Source
 pages can change; content snapshots and redistribution rights need a future archival
 policy. Source summaries and hashes of curated inputs are not hashes of original pages.
+
+
+# Phase 2 addendum (2026-11-04)
+
+Schema/model v2 adds separate infrastructure evidence, ledger roles, accounting series,
+relationships and research gaps. Eleven token records and fourteen infrastructure
+records now replace the initial coverage counts. Source and scenario details are in
+`sources.md`, `data-model.md` and `scenarios.md`. Historical Phase 1 statements above
+are retained for context; the current README and assessment describe this release.
+
+New raw units normalize tokens/minute by multiplying 1,440 and tokens/week by dividing
+7. A daily-equivalent rate is not an observed completed day. Google's approximate API
+figure retains its uncertainty wording and a separate scope from all surfaces. China
+retrospective start/end-year anchors are approximate dates, not precise daily samples.
+OpenRouter pass-through remains non-additive. Its source page was updated after its
+original publication; without an archive, May attribution is uncertain.
+
+The publication cutoff excludes later publications and known later page updates.
+It does not reconstruct an archived real-time information set: unrecorded edits and
+later ledger revisions can still introduce hindsight. Never advertise it as a validated
+investment backtest. Latest-per-series selection is not a synchronized global floor.
+`compatible_sum` requires matching known accounting, explicit periods and evidenced
+pairwise disjointness; the resulting number would describe only that selected subset.
+
+Infrastructure retains original power, physical chips and H100e units, separately
+classified as reported use, estimates, additions, access announcements or targets.
+Source-reported statistical intervals are distinct from scenario sensitivities. There
+is no automatic conversion from power or H100e into usable inference tokens. Cloud
+owners and renters can describe the same hardware, and flows are not stock levels.
+
+Automated monitoring fetches only allowlisted public HTTPS URLs with bounded time/size
+and safe redirects. It stores hashes and statuses, not copyrighted page snapshots.
+Changes and unavailable pages require review; neither promotes new measurements.
+Fingerprint baselines are engineering checks, not historical archives or proof of the
+reported quantities. Initial direct-network failures are disclosed in validation.

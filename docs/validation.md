@@ -1,40 +1,40 @@
-# Phase 1 validation record
+# Release 0.2 validation — 2026-11-04 (Australia/Sydney)
 
-Host: MMI Windows laptop. Validation date: 2026-11-03.
-Python 3.14.3; Git 2.26.0.windows.1; isolated `.venv` environment.
-DuckDB 1.5.6, Pandas 3.1.0, Plotly 6.9.0, Streamlit 1.66.1,
-pytest 9.2.0. Full dependency pins: `requirements-lock.txt`.
+- Windows / Python 3.14.3: **43 tests passed**, no failures (8.43 seconds).
+- Streamlit AppTest: initial render, empty selection, positive capacity and complete
+  matched-scope scenario interaction passed; four dashboard tabs present.
+- Browser inspection: running dashboard shows release 0.2, six reporting entities,
+  eleven selected disclosures and a latest selected publication of 2026-10-28.
+- Offline DuckDB v2 rebuild: 11 demand observations and 14 infrastructure records.
+- Accounting tests cover minute/week/month/calendar conversion, leap years, qualifier
+  preservation, scope separation, containment cycle rejection, duplicate revisions,
+  publication/update cutoff, staleness and rejection of unresolved aggregation.
+- Scenario tests cover finite inputs, token split, reversed/mismatched periods,
+  planned capacity rejection, revenue bands, elasticity, idle cost and break-even.
+- Release tests verify deterministic manifests, real CSV parsing and expected rows.
+- Portable HTML checks: 25 evidence cards, mobile viewport, no JavaScript or external
+  resources; minute and week original-unit labels preserved. Phone OS-specific file
+  viewers have not been tested.
+- Dependency check: no broken requirements; package installed as version 0.2.0.
+- Monitoring tests: curated HTTPS/port allowlist, content changes, unchanged sources,
+  HTTP failures and script noise filtering; measurements are never promoted.
 
-- `python -m pytest -q`: **20 passed**, no failures (5.65 seconds).
-- Streamlit AppTest executed the application and empty-provider interaction without exceptions.
-- `python -m pip check`: no broken requirements found.
-- CLI rebuilt `data/monitor.duckdb` from committed evidence, producing five normalized
-  disclosures covering three providers.
-- Repeatable rebuild and source/input hashes tested; observation revisions tested.
-- Calendar day/leap-year arithmetic, monthly denominator sensitivity, unknown units,
-  missing periods, nonfinite/negative reports and invalid capacity inputs tested.
-- Estimated records excluded from disclosed view; unreviewed aggregation rejected.
-- Unknown input/output split rejected by compute-equivalence calculation.
-- Local server `http://127.0.0.1:8501/`: HTTP 200.
-- Local health `http://127.0.0.1:8501/_stcore/health`: HTTP 200, `ok`.
-- `git diff --check`: passed.
-- Pattern scan of intended code/data/docs/tests found no credential-shaped strings.
-  This is a basic scan, not a guarantee of comprehensive secret detection.
+Initial direct-network source check: 10 fingerprints captured, 5 unavailable. These
+HTTP failures do not override manual browsing verification. Baselines store normalized
+text hashes only; source publication/navigation edits can produce review alerts.
 
-The server binds only to localhost; logs/PID are under ignored `logs/`.
-To stop this session's server, inspect `logs/streamlit.pid` and confirm the process
-before stopping it. To restart, use the README command.
+- openai_api_2026: HTTPError: HTTP Error 403: Forbidden
+- google_q3_2026: HTTPError: HTTP Error 403: Forbidden
+- openai_compute_2026: HTTPError: HTTP Error 403: Forbidden
+- anthropic_spacex_2026: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>
+- anthropic_aws_2026: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>
 
-Dependency lock captured on Windows Python 3.14; Linux CI is configured but its result
-must be checked after publication. No browser screenshot or full manual visual review
-was performed; dashboard execution was verified with Streamlit AppTest and HTTP checks.
-Public source figures were manually checked against the cited primary pages; they
-remain unaudited company disclosures. No current global demand/supply claim was tested.
 
-## Remote verification
+The CI workflow additionally rebuilds exports, builds the Linux container and checks
+that the container loads the evidence. Remote results are recorded below after push.
+Docker is not installed on the laptop; container verification relies on remote CI.
+No paid cloud deployment or comprehensive real-world fleet/tightness validation has
+been performed. Unavailable worldwide telemetry remains an explicit research gap.
 
-GitHub Actions on Ubuntu / Python 3.14 completed successfully for implementation
-commit d159804 (20 tests passed, dependency installation and database rebuild passed):
-https://github.com/MichaelMi7/global-ai-compute-monitor/actions/runs/41550663936
-
-Published repository: https://github.com/MichaelMi7/global-ai-compute-monitor
+Historical Phase 1 validation is preserved in Git (20 passing tests and successful
+Linux run 41550663936); it is superseded by this release record.

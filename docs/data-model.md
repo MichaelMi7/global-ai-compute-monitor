@@ -1,23 +1,35 @@
-# DuckDB data model, schema v1
+# DuckDB data model, schema v2
 
-`sql/schema.sql` is executable. JSON is the version-controlled source of truth.
+The JSON ledgers are the version-controlled evidence. `sql/schema.sql` defines the
+rebuildable analytical database. Version 2 extends the initial demand-only schema.
 
-| Object | Purpose |
+| Object | Meaning |
 |---|---|
-| sources | Stable source ID, URL, title, displayed publication date/status, retrieval date, source type, factual summary |
-| observations | Revisioned original numeric evidence, source FK, provider/model, geography and its basis, workload/deployment/scope, token split, frequency, period boundaries/status, as-of chart anchor, qualifier, evidence class, uncertainty, overlap/aggregation controls, notes |
-| metadata | Schema/model version and SHA-256 hashes of committed input bytes |
-| latest_observations | Highest revision per observation ID |
-| daily_demand | Joined provenance and normalized tokens/day; denominator sensitivity and derived classification |
+| sources | Source ID, canonical HTTPS URL, title, displayed publication date/status, known update date, manual retrieval/review date, type and short factual summary |
+| observations | Original token reports, revision, provider, ledger role, accounting series, model/workload/deployment, geography/basis, period/status, as-of anchor, frequency, input/output split, original magnitude/unit/qualifier, evidence class, uncertainty, overlap and notes |
+| infrastructure | Separate versioned stock/flow/access/target reports, entity, original unit, metric/status, evidence class, qualifier, source uncertainty, hardware, geography, workload and unknown inference/availability/utilization fractions |
+| relationships | Directed containment, possible overlap, scope break or explicitly evidenced disjointness, plus reason and source |
+| research_gaps | Entity-specific search result, checked date, relevant source and unresolved limitation; absence in reviewed pages is not proof of absence everywhere |
+| metadata | Schema/model version and hashes of all five evidence ledgers |
+| latest_observations / latest_infrastructure | Highest revision for each evidence ID |
+| normalized_observations | Daily-equivalent arithmetic joined to provenance; retains evidence class and qualifier |
+| daily_demand / normalized_estimates | Disclosed and estimated token evidence are separate views |
 
-Input/output fields and model are nullable; absence is not zero. Uncertainty bounds
-are in original observation units and are null when no interval was disclosed.
-Derived calendar sensitivities use tokens/day and do not replace uncertainty bounds.
-Qualifiers (`equal`, `over`, `approximately`) apply to the numeric report and derived
-rate. Geography basis is stored independently from provider identity.
+Production demand rows currently are disclosures; five infrastructure rows are Epoch
+research estimates. Unknown model, input/output, inference fraction, availability and
+utilization stay null. H100-equivalent compute use is not physical H100 stock.
+Uncertainty bounds use each original row's unit. Only the Epoch rows have source-reported
+90% intervals. Demand denominator sensitivities use tokens/day and are not intervals.
 
-Future migrations should add independently sourced capacity stock/availability,
-benchmark workload definitions, price/revenue observations, model FLOP coefficients,
-overlap relationships, assumption versions and scenario-result tables. Those concepts
-are intentionally not populated with guessed Phase 1 values. Persist scenarios with
-provenance before presenting investment or tightness conclusions.
+The v2 rebuild is a transaction: validate inputs, drop only project-owned named views
+and tables, recreate and load. Failure rolls back to the prior database. Use a dedicated
+file, never a database containing unrelated tables with the same names. This is a
+rebuild migration rather than a destructive in-place edit of a source-of-truth database.
+Corrections append revisions; Git preserves earlier dataset releases. Relationship
+endpoints refer to stable observation IDs. Validator rejects duplicate revisions,
+unknown sources/fields, negative/nonfinite magnitudes, invalid intervals and containment
+cycles. No production record is approved for a global sum.
+
+The release manifest also hashes schema and model/accounting/scenario code. CSVs have
+stable ordering and deterministic bytes. Source fingerprints separately record only
+normalized text hashes; they are not archived original pages or evidence verification.

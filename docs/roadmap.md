@@ -1,22 +1,19 @@
-# Proposed Phase 2 research roadmap
+# Research roadmap and completion status
 
-1. Expand and refresh primary disclosures: OpenAI, Anthropic, China, routers, private
-   fleets and on-device workloads. Capture original dates, explicit windows, archived
-   evidence where permitted and a reviewer-approved overlap graph. Separate measured
-   platform processing from inferred inference totals.
-2. Build workload accounting: model mix, modality, prefill/decode split, cache hit rates,
-   reasoning tokens, context distributions and reference FLOP/energy coefficients.
-   Produce compute-equivalent ranges only for matched scopes.
-3. Build supply ledger: deliveries versus installed/operational stock, geography,
-   power/connection dates, captive/public/private deployments, training allocation,
-   outages/reservations and workload-matched production benchmarks.
-4. Estimate economic demand separately using prices, elasticity, usage cohorts,
-   queues, rate limits and willingness-to-pay proxies. Publish identification limits.
-5. Reconcile compatible demand/supply windows, correlated uncertainty and geographic
-   bottlenecks. Back-test ranges against held-out disclosures; avoid tuning to a
-   desired tightness conclusion.
-6. Add research investment scenarios: utilization, effective pricing, power, capital
-   costs, depreciation and margins. Report sensitivities and falsification conditions,
-   rather than treating raw token growth as an automatic return forecast.
-7. Add scheduled source checks, archival policy, schema migrations, dataset release
-   manifests and an explicit contributor/reviewer process.
+Release 0.2 delivers the end-to-end tooling requested after Phase 1. An evolving global
+research dataset cannot eliminate unknown private activity; open questions are tracked
+in `data/research_gaps.json` rather than represented by fabricated values.
+
+| Workstream | Delivered | Evidence still needed |
+|---|---|---|
+| Primary demand | OpenAI, Google, Microsoft, Fireworks, national China and OpenRouter ledger; dates, qualifiers, periods and source updates | Fresher totals and broader private/on-device coverage; absolute Anthropic and Meta totals |
+| Accounting | Separate ledgers/series, containment graph, publication cutoff, explicit disjointness requirement | Reviewed cross-provider/deployment and national-perimeter overlap |
+| Workload equivalents | Validated input/output FLOP conversion tool | Population-weighted model mix, context, cache and matched measured coefficients |
+| Supply | Versioned power/chip/use/commitment evidence and estimate intervals | Inference allocation, commissioning, availability, workload-matched throughput |
+| Economics | Revenue/price response and cost/break-even scenarios with exports | Identified elasticity, realized prices, complete costs and independent backtests |
+| Tightness | Matching-scope guard and hypothetical comparisons | Comparable dated demand and available supply per geography/workload |
+| Reproducibility | Offline DuckDB, tests, deterministic CSV/hash manifests, portable HTML, CI/container checks | Wider version/platform testing and historical archive agreements |
+| Monitoring | Weekly public source availability/content-hash reports; manual review gate | Permitted durable source archives and broader source discovery |
+
+Cloud hosting is optional. Streamlit Community Cloud configuration and a container
+recipe are provided; this release runs locally and can be downloaded as offline HTML.
