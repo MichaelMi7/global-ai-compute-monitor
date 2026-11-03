@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "global-ai-compute-monitor"
-version = "0.1.0"
+version = "0.2.0"
 description = "Provenance-first public AI inference research"
 requires-python = ">=3.11"
 dependencies = ["duckdb>=1.4,<2", "pandas>=2.3,<4", "plotly>=6,<7", "streamlit>=1.50,<2"]

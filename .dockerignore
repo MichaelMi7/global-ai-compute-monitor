@@ -1,0 +1,9 @@
+.git
+.venv
+logs
+__pycache__
+.pytest_cache
+.env
+.streamlit/secrets.toml
+*.duckdb
+exports

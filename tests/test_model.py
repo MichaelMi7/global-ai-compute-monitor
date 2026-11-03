@@ -45,8 +45,8 @@ def test_compute_equivalent_requires_split():
 
 def test_offline_ingestion_and_accounting():
     con=build_database()
-    assert con.execute("SELECT count(*) FROM daily_demand").fetchone()[0]==5
-    assert con.execute("SELECT count(DISTINCT provider) FROM daily_demand").fetchone()[0]==3
+    assert con.execute("SELECT count(*) FROM daily_demand").fetchone()[0]==11
+    assert con.execute("SELECT count(DISTINCT provider) FROM daily_demand").fetchone()[0]==6
     assert con.execute("SELECT count(*) FROM observations WHERE aggregation_eligible").fetchone()[0]==0
     assert con.execute("SELECT count(input_tokens)+count(output_tokens) FROM observations").fetchone()[0]==0
     assert con.execute("SELECT qualifier FROM daily_demand WHERE observation_id='google_2025_07'").fetchone()[0]=='over'
@@ -74,7 +74,7 @@ def test_version_selection(tmp_path):
     (tmp_path/'observations.json').write_text(json.dumps(rows))
     con=build_database(data_dir=tmp_path)
     assert con.execute("SELECT reported_value FROM latest_observations WHERE observation_id=?",[revision['observation_id']]).fetchone()[0]==123
-    assert con.execute("SELECT count(*) FROM observations").fetchone()[0]==6
+    assert con.execute("SELECT count(*) FROM observations").fetchone()[0]==12
     con.close()
 
 def test_reject_unreviewed_aggregation(tmp_path):
@@ -95,6 +95,6 @@ def test_estimates_excluded_from_disclosed_view(tmp_path):
     (tmp_path/'sources.json').write_bytes((ROOT/'data/sources.json').read_bytes())
     (tmp_path/'observations.json').write_text(json.dumps(rows))
     con=build_database(data_dir=tmp_path)
-    assert con.execute("SELECT count(*) FROM daily_demand").fetchone()[0]==4
+    assert con.execute("SELECT count(*) FROM daily_demand").fetchone()[0]==10
     assert con.execute("SELECT count(*) FROM observations WHERE evidence_class='estimated'").fetchone()[0]==1
     con.close()

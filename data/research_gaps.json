@@ -1,0 +1,50 @@
+[
+  {
+    "entity": "Anthropic",
+    "category": "demand",
+    "status": "no_usable_total_identified",
+    "checked_on": "2026-11-04",
+    "source_id": "anthropic_aws_2026",
+    "detail": "Revenue and infrastructure disclosures are usable evidence; no absolute realized total token throughput identified in reviewed pages. Revenue is not token volume."
+  },
+  {
+    "entity": "Microsoft",
+    "category": "demand",
+    "status": "recent_absolute_total_not_identified",
+    "checked_on": "2026-11-04",
+    "source_id": "microsoft_q1_2027",
+    "detail": "Latest call reviewed; supply commentary and throughput improvement are not absolute realized token totals. April projection of customers on track for yearly tokens is not observed usage."
+  },
+  {
+    "entity": "Meta",
+    "category": "demand",
+    "status": "no_usable_total_identified",
+    "checked_on": "2026-11-04",
+    "source_id": "meta_prometheus_2026",
+    "detail": "Current training infrastructure and future target are not realized inference token demand."
+  },
+  {
+    "entity": "Fireworks",
+    "category": "demand",
+    "status": "newer_primary_total_not_verified",
+    "checked_on": "2026-11-04",
+    "source_id": "fireworks_series_c",
+    "detail": "Newer secondary claims surfaced; none promoted without a verified dated primary statement. Existing 2025 disclosure remains stale."
+  },
+  {
+    "entity": "Global",
+    "category": "geography_and_private",
+    "status": "unresolved",
+    "checked_on": "2026-11-04",
+    "source_id": null,
+    "detail": "Private/on-device, national/provider overlap, serving versus consuming geography, model mix, input/output and caching remain unknown. No comprehensive worldwide total or tightness estimate."
+  },
+  {
+    "entity": "Benchmarks",
+    "category": "compute_equivalence",
+    "status": "no_matched_global_workload",
+    "checked_on": "2026-11-04",
+    "source_id": null,
+    "detail": "No population-weighted measured prefill/decode benchmark matches aggregate token evidence. Scenario coefficients must be supplied explicitly; no default production conversion."
+  }
+]

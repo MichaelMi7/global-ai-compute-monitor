@@ -7,7 +7,8 @@
     "evidence_summary": "Google reported more than 980 trillion monthly tokens across its surfaces; earlier May announcement was 480 trillion monthly.",
     "retrieved_on": "2026-11-03",
     "source_type": "primary_company_disclosure",
-    "publication_date_status": "page_displayed_original_date_not_independently_archived"
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "updated_on": null
   },
   {
     "source_id": "google_q3_2025",
@@ -17,7 +18,8 @@
     "evidence_summary": "Google reported more than 1.3 quadrillion tokens monthly across its surfaces.",
     "retrieved_on": "2026-11-03",
     "source_type": "primary_company_disclosure",
-    "publication_date_status": "page_displayed_original_date_not_independently_archived"
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "updated_on": null
   },
   {
     "source_id": "microsoft_q3_2025",
@@ -27,7 +29,8 @@
     "evidence_summary": "Foundry context: more than 100 trillion tokens in the quarter, including 50 trillion in the previous month.",
     "retrieved_on": "2026-11-03",
     "source_type": "primary_company_disclosure",
-    "publication_date_status": "page_displayed_original_date_not_independently_archived"
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "updated_on": null
   },
   {
     "source_id": "fireworks_series_c",
@@ -37,6 +40,128 @@
     "evidence_summary": "Platform processing exceeded 10 trillion tokens per day; averaging window not provided.",
     "retrieved_on": "2026-11-03",
     "source_type": "primary_company_disclosure",
-    "publication_date_status": "page_displayed_original_date_not_independently_archived"
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "updated_on": null
+  },
+  {
+    "source_id": "openai_api_2026",
+    "url": "https://openai.com/index/accelerating-the-next-phase-ai/",
+    "title": "OpenAI: Accelerating the next phase of AI",
+    "published_on": "2026-03-31",
+    "retrieved_on": "2026-11-04",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "evidence_summary": "API processing exceeded 15 billion tokens per minute; averaging window unspecified.",
+    "updated_on": null
+  },
+  {
+    "source_id": "google_q3_2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+    "title": "Alphabet Q3 2026 results, Exhibit 99.1",
+    "published_on": "2026-10-28",
+    "retrieved_on": "2026-11-04",
+    "source_type": "primary_regulatory_filing",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "evidence_summary": "First-party model APIs processed nearly 32 billion tokens per minute; different scope from all-surface reports.",
+    "updated_on": null
+  },
+  {
+    "source_id": "openrouter_series_b",
+    "url": "https://openrouter.ai/blog/announcements/series-b/",
+    "title": "OpenRouter Series B announcement",
+    "published_on": "2026-05-28",
+    "retrieved_on": "2026-11-04",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "evidence_summary": "Weekly routed volume reached 25 trillion tokens. Page subsequently updated August 19; historical text version not archived.",
+    "updated_on": "2026-08-19"
+  },
+  {
+    "source_id": "china_nda_2026",
+    "url": "https://www.nda.gov.cn/sjj/swdt/mtsy/0325/20260325113132934906079_pc.html",
+    "title": "National Data Administration: Xinhua report of director remarks",
+    "published_on": "2026-03-25",
+    "retrieved_on": "2026-11-04",
+    "source_type": "official_republication_of_official_statement",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "evidence_summary": "Daily token calls exceeded 140 trillion by March 2026; comparison anchors 100 trillion at end-2025 and 100 billion at early-2024.",
+    "updated_on": null
+  },
+  {
+    "source_id": "openai_compute_2026",
+    "url": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/",
+    "title": "OpenAI: A business that scales with the value of intelligence",
+    "published_on": "2026-01-18",
+    "retrieved_on": "2026-11-04",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "evidence_summary": "Available compute was reported as 0.2 GW in 2023, 0.6 GW in 2024 and approximately 1.9 GW in 2025. Year-end anchoring is an interpretation, not a source timestamp.",
+    "updated_on": null
+  },
+  {
+    "source_id": "epoch_users_2026",
+    "url": "https://epoch.ai/latest/introducing-the-ai-chip-users-explorer",
+    "title": "Josh You, Epoch AI: Introducing the AI Chip Users explorer",
+    "published_on": "2026-09-09",
+    "retrieved_on": "2026-11-04",
+    "source_type": "primary_research_estimate",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "evidence_summary": "December 2025 compute-use estimates and 90% intervals for five frontier labs, including research, training and inference.",
+    "updated_on": null
+  },
+  {
+    "source_id": "anthropic_spacex_2026",
+    "url": "https://www.anthropic.com/news/higher-limits-spacex",
+    "title": "Anthropic: Higher limits and SpaceX compute deal",
+    "published_on": "2026-05-06",
+    "retrieved_on": "2026-11-04",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "evidence_summary": "Agreement for access to more than 220,000 NVIDIA GPUs and 300 MW within the month; not confirmation of subsequent commissioning.",
+    "updated_on": null
+  },
+  {
+    "source_id": "anthropic_aws_2026",
+    "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+    "title": "Anthropic and Amazon expand compute collaboration",
+    "published_on": "2026-04-20",
+    "retrieved_on": "2026-11-04",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "evidence_summary": "More than one million Trainium2 chips currently used to train and serve Claude; agreement also covers up to 5 GW future capacity. Run-rate revenue exceeded $30B. Updated April 21.",
+    "updated_on": "2026-04-21"
+  },
+  {
+    "source_id": "meta_prometheus_2026",
+    "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/",
+    "title": "Meta Engineering: Inside Prometheus",
+    "published_on": "2026-10-19",
+    "retrieved_on": "2026-11-04",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "evidence_summary": "Existing cluster described as hundreds of thousands of GPUs; approximately one million GPUs is a future full-scale target, not current installed count.",
+    "updated_on": null
+  },
+  {
+    "source_id": "microsoft_q3_2026",
+    "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+    "title": "Microsoft FY26 Q3 earnings call",
+    "published_on": "2026-04-29",
+    "retrieved_on": "2026-11-04",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "evidence_summary": "Company reported adding another GW of capacity during the quarter. No inference-only allocation provided; customer token projection is not realized total.",
+    "updated_on": null
+  },
+  {
+    "source_id": "microsoft_q1_2027",
+    "url": "https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1",
+    "title": "Microsoft FY27 Q1 earnings call",
+    "published_on": "2026-10-28",
+    "retrieved_on": "2026-11-04",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived",
+    "evidence_summary": "Company described supply constraints and efficiency gains; no compatible absolute Foundry token total identified in reviewed text.",
+    "updated_on": null
   }
 ]

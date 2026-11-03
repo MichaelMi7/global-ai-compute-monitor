@@ -1,0 +1,96 @@
+{
+  "checked_at_utc": "2026-11-03T21:19:08.293344+00:00",
+  "policy": "Availability/content fingerprints only; no automatic measurement or verification-date updates. Navigation edits may trigger changes.",
+  "results": [
+    {
+      "source_id": "google_q2_2025",
+      "url": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2025/",
+      "status": "new_fingerprint",
+      "text_sha256": "d9404c065ef588a763c898666c7463f6020fd23d54ba91a199bf89ccbc610deb"
+    },
+    {
+      "source_id": "google_q3_2025",
+      "url": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2025/",
+      "status": "new_fingerprint",
+      "text_sha256": "7e16e75d7eb71e934350bfcff3784b2dacbbdd3b0ab1d618aad2920757b95b73"
+    },
+    {
+      "source_id": "microsoft_q3_2025",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+      "status": "new_fingerprint",
+      "text_sha256": "90d115c44b84ce24cae768f3f6ba97cd25c16a60af596f078bf0c1a3d4ae6656"
+    },
+    {
+      "source_id": "fireworks_series_c",
+      "url": "https://fireworks.ai/blog/fireworks-ai-series-c-funding",
+      "status": "new_fingerprint",
+      "text_sha256": "30ba211db40eaba759b7020f0e148f3532072b58d3c70f73258b7d288251b95b"
+    },
+    {
+      "source_id": "openai_api_2026",
+      "url": "https://openai.com/index/accelerating-the-next-phase-ai/",
+      "status": "unavailable",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "source_id": "google_q3_2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "status": "unavailable",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "source_id": "openrouter_series_b",
+      "url": "https://openrouter.ai/blog/announcements/series-b/",
+      "status": "new_fingerprint",
+      "text_sha256": "b882ad9a6632b13182dfbc3dfcf550edd03b39f20dfa683e640d38d2aec5e8f4"
+    },
+    {
+      "source_id": "china_nda_2026",
+      "url": "https://www.nda.gov.cn/sjj/swdt/mtsy/0325/20260325113132934906079_pc.html",
+      "status": "new_fingerprint",
+      "text_sha256": "2dae7257f5547d7c3e69c59eb4be7d7d23028a979e44799dab6ded01f75f298b"
+    },
+    {
+      "source_id": "openai_compute_2026",
+      "url": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/",
+      "status": "unavailable",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "source_id": "epoch_users_2026",
+      "url": "https://epoch.ai/latest/introducing-the-ai-chip-users-explorer",
+      "status": "new_fingerprint",
+      "text_sha256": "52b55df3d3c3deb4525c72bf355712683a262695875f1c29eeca750f70e5e9b1"
+    },
+    {
+      "source_id": "anthropic_spacex_2026",
+      "url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "status": "unavailable",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>"
+    },
+    {
+      "source_id": "anthropic_aws_2026",
+      "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+      "status": "unavailable",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>"
+    },
+    {
+      "source_id": "meta_prometheus_2026",
+      "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/",
+      "status": "new_fingerprint",
+      "text_sha256": "c5b728859226c7cb79fde075592d746167155f6dfea34324d53cfe71b04593b0"
+    },
+    {
+      "source_id": "microsoft_q3_2026",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+      "status": "new_fingerprint",
+      "text_sha256": "bb7017f3b19e99483c2e14f59791122be5f073ca8e2b0a3fdcea386afeb67bca"
+    },
+    {
+      "source_id": "microsoft_q1_2027",
+      "url": "https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1",
+      "status": "new_fingerprint",
+      "text_sha256": "61222957b0539988268538ca5a0624193ee4ad6b895b1b9ead2fd1be2b05eecd"
+    }
+  ]
+}

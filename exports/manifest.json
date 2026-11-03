@@ -1,0 +1,33 @@
+{
+  "code": {
+    "sql/schema.sql": "77438ffdaf2b9eb937f5783a64d2d1b78bc81fc47c49659f42f82bd0539710e9",
+    "src/compute_monitor/accounting.py": "e607639c2cf9f2fd8002662680205f053cf08ed221159d68ebc17b394506dc86",
+    "src/compute_monitor/model.py": "578031eca70b8c2e331d27e856c0ade0fe5db6d5f04761415a280cd727ae4f6e",
+    "src/compute_monitor/scenarios.py": "aa7f6c22f0b2c53cd04613cfce356191c2ef2b5f92ad40e83cca5e386a0237d9"
+  },
+  "counts": {
+    "infrastructure": 14,
+    "observations": 11,
+    "relationships": 3,
+    "research_gaps": 6,
+    "sources": 15
+  },
+  "exports": {
+    "demand-evidence.csv": "b934247f7100e763295443a2d1b6a1aa3619f225003d298d908d920c9b4e138d",
+    "infrastructure-evidence.csv": "008ee9c448a0d6e50d425ef95b3e44f9456a7ad8a1d17af6d7e814f9282e67df"
+  },
+  "inputs": {
+    "infrastructure.json": "79f5b6b747053f0c97384adf55e1c56b01b8451299bbce1370179df7ba2ee724",
+    "observations.json": "6520e54ffda1a464fb76add5dd499cf243c27545aa8fd210bf3c55d51abdd947",
+    "relationships.json": "c6e2d0ea40b63d3af42852df31a25fb0e3bb16551b87292f690c0831e29376f8",
+    "research_gaps.json": "a07f037698c6dc1b593198d808303895cf0f8a9725c33e2d29482f97340a9c14",
+    "sources.json": "8a976a1181239e3ea170ad45f3b0f11409073d56bc6b2aec20b2cfaf91801945"
+  },
+  "limitations": "Selected public evidence only; no current global sum or matched observed tightness. Estimates and scenarios are not measurements.",
+  "model_version": "0.2.0",
+  "schema_version": 2,
+  "verification_dates": [
+    "2026-11-03",
+    "2026-11-04"
+  ]
+}

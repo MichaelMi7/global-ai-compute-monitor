@@ -1,0 +1,23 @@
+[
+  {
+    "left_id": "microsoft_2025_03",
+    "right_id": "microsoft_2025_q3",
+    "relation": "contained_in",
+    "reason": "March is part of fiscal Q3; exact reporting perimeter assumed consistent within same source.",
+    "source_id": "microsoft_q3_2025"
+  },
+  {
+    "left_id": "openrouter_2026_05",
+    "right_id": "openai_api_2026_03",
+    "relation": "possible_overlap",
+    "reason": "Router pass-through can be served by upstream providers; no provider allocation and periods differ.",
+    "source_id": "openrouter_series_b"
+  },
+  {
+    "left_id": "google_api_2026_10",
+    "right_id": "google_2025_10",
+    "relation": "scope_break",
+    "reason": "Model APIs and all surfaces are different scopes; period also differs.",
+    "source_id": "google_q3_2026"
+  }
+]

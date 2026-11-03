@@ -1,0 +1,3 @@
+# Cloud entry point: install the locked environment and local src package.
+-r requirements-lock.txt
+-e .
