@@ -14,5 +14,6 @@ jobs:
       - run: compute-monitor --database data/monitor.duckdb
       - run: python -m compute_monitor.release
       - run: python scripts/export_html.py
+      - run: git diff --exit-code -- exports/demand-evidence.csv exports/infrastructure-evidence.csv exports/manifest.json
       - run: docker build -t compute-monitor .
       - run: docker run --rm compute-monitor python -c "from compute_monitor.model import build_database; c=build_database(); assert c.execute('SELECT count(*) FROM daily_demand').fetchone()[0] == 11"

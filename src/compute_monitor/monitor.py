@@ -68,7 +68,7 @@ def main():
     baseline=json.loads(baseline_path.read_text()) if baseline_path.exists() else {}
     report=check_sources(read_ledger()['sources'],baseline,delay=.2)
     path=Path(args.output);path.parent.mkdir(parents=True,exist_ok=True)
-    path.write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+    path.write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')
     from collections import Counter
     print(dict(Counter(r['status'] for r in report['results'])))
 if __name__=='__main__': main()

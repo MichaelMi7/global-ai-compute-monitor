@@ -68,7 +68,7 @@ def export():
     <footer>Snapshot generated ''' + datetime.now(ZoneInfo('Australia/Sydney')).date().isoformat() + '''. Source verification dates: 2026-11-03 and 2026-11-04. No automatic measurement updates.<br>Observation ledger SHA-256: <code>''' + digest + '''</code><br><a href="https://github.com/MichaelMi7/global-ai-compute-monitor">Project and full methodology on GitHub</a></footer></main></body></html>'''
     path = ROOT / 'exports/global-ai-compute-monitor.html'
     path.parent.mkdir(exist_ok=True)
-    path.write_text(html,encoding='utf-8')
+    path.write_text(html,encoding='utf-8',newline='\n')
     print(f'{path} ({path.stat().st_size:,} bytes)')
     return path
 

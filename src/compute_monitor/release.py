@@ -22,7 +22,7 @@ def release(output_dir=None):
        code={name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in ('sql/schema.sql','src/compute_monitor/model.py','src/compute_monitor/accounting.py','src/compute_monitor/scenarios.py')},
        exports={name:hashlib.sha256((output/name).read_bytes()).hexdigest() for name in tables},
        limitations='Selected public evidence only; no current global sum or matched observed tightness. Estimates and scenarios are not measurements.')
-    (output/'manifest.json').write_text(json.dumps(manifest,indent=2,sort_keys=True)+'\n',encoding='utf-8')
+    (output/'manifest.json').write_text(json.dumps(manifest,indent=2,sort_keys=True)+'\n',encoding='utf-8',newline='\n')
     print(json.dumps(manifest['counts']))
     return manifest
 if __name__=='__main__':
