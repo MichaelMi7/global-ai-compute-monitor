@@ -30,3 +30,11 @@ must be checked after publication. No browser screenshot or full manual visual r
 was performed; dashboard execution was verified with Streamlit AppTest and HTTP checks.
 Public source figures were manually checked against the cited primary pages; they
 remain unaudited company disclosures. No current global demand/supply claim was tested.
+
+## Remote verification
+
+GitHub Actions on Ubuntu / Python 3.14 completed successfully for implementation
+commit d159804 (20 tests passed, dependency installation and database rebuild passed):
+https://github.com/MichaelMi7/global-ai-compute-monitor/actions/runs/41550663936
+
+Published repository: https://github.com/MichaelMi7/global-ai-compute-monitor
