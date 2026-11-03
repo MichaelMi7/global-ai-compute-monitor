@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "global-ai-compute-monitor"
+version = "0.1.0"
+description = "Provenance-first public AI inference research"
+requires-python = ">=3.11"
+dependencies = ["duckdb>=1.4,<2", "pandas>=2.3,<4", "plotly>=6,<7", "streamlit>=1.50,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+compute-monitor = "compute_monitor.model:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

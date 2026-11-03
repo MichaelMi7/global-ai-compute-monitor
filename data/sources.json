@@ -1,0 +1,42 @@
+[
+  {
+    "source_id": "google_q2_2025",
+    "url": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2025/",
+    "title": "Alphabet Q2 2025 CEO remarks",
+    "published_on": "2025-07-23",
+    "evidence_summary": "Google reported more than 980 trillion monthly tokens across its surfaces; earlier May announcement was 480 trillion monthly.",
+    "retrieved_on": "2026-11-03",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived"
+  },
+  {
+    "source_id": "google_q3_2025",
+    "url": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2025/",
+    "title": "Alphabet Q3 2025 CEO remarks",
+    "published_on": "2025-10-29",
+    "evidence_summary": "Google reported more than 1.3 quadrillion tokens monthly across its surfaces.",
+    "retrieved_on": "2026-11-03",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived"
+  },
+  {
+    "source_id": "microsoft_q3_2025",
+    "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+    "title": "Microsoft FY2025 Q3 earnings transcript",
+    "published_on": "2025-04-30",
+    "evidence_summary": "Foundry context: more than 100 trillion tokens in the quarter, including 50 trillion in the previous month.",
+    "retrieved_on": "2026-11-03",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived"
+  },
+  {
+    "source_id": "fireworks_series_c",
+    "url": "https://fireworks.ai/blog/fireworks-ai-series-c-funding",
+    "title": "Fireworks Series C announcement",
+    "published_on": "2025-10-28",
+    "evidence_summary": "Platform processing exceeded 10 trillion tokens per day; averaging window not provided.",
+    "retrieved_on": "2026-11-03",
+    "source_type": "primary_company_disclosure",
+    "publication_date_status": "page_displayed_original_date_not_independently_archived"
+  }
+]
